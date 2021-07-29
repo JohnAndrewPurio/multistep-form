@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipart Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="steps">
+            <div>
+                <button class="count">1</button>
+                <h4 class="title">1st</h4>
+            </div>
+            <div>2nd</div>
+            <div>3rd</div>
+        </div>
+
+        <div class="procedures">
+            <h3 class="content">Choose a description</h3>
+            <div class="controls">
+                <button onclick="prev()">
+                    Previous
+                </button>
+                <button onclick="next()">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <template id="step">
+        <div>
+            <button class="count">1</button>
+            <h4 class="title">1st</h4>
+        </div>
+    </template>
+
+    <template id="procedure">
+        <h3 class="content">Choose a description</h3>
+        <div class="controls">
+            <button onclick="prev()" class="prev">
+                Previous
+            </button>
+            <button onclick="next()" class="next">
+                Next
+            </button>
+        </div>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>

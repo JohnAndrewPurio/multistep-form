@@ -1,0 +1,71 @@
+:root {
+    --main-color: #763198;
+    --secondary: white;
+    --text: black;
+
+    --card-height: 15em;
+    --card-width: 40em;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: var(--secondary);
+    width: var(--card-width);
+    height: var(--card-height);
+    position: fixed;
+    top: calc(50% - (var(--card-height) / 2));
+    left: calc(50% - (var(--card-width) / 2));
+
+    display: flex;
+}
+
+.card > div {
+    width: 50%;
+    padding: 2em;
+}
+
+.steps > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps > div > * {
+    text-align: center;
+}
+
+.count {
+    padding: 0.75em;
+    width: 3em;
+    height: 3em;
+    background-color: #DDD;
+    border-radius: 50%;
+    border: none;
+}
+
+.title {
+    width: 80%;
+}
+
+.selected {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    padding: 1em;
+    border: none;
+    border-radius: 1vmin;
+}
+
+
+
